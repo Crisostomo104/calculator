@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <a href="../" class="back-link">&larr; Back to Hub</a>
+        <header>
+            <h1>Scientific Calculator</h1>
+            <p>Advanced Mathematical Functions</p>
+        </header>
+        <div class="calculator">
+            <div class="display">
+                <div class="history" id="history"></div>
+                <div class="current" id="current">0</div>
+            </div>
+            <div class="keypad">
+                <button class="btn fn" onclick="calculate('sin')">sin</button>
+                <button class="btn fn" onclick="calculate('cos')">cos</button>
+                <button class="btn fn" onclick="calculate('tan')">tan</button>
+                <button class="btn action clear" onclick="clearAll()">AC</button>
+                <button class="btn action" onclick="deleteChar()">DEL</button>
+
+                <button class="btn fn" onclick="calculate('sqrt')">√</button>
+                <button class="btn fn" onclick="calculate('square')">x²</button>
+                <button class="btn fn" onclick="calculate('pow')">x^y</button>
+                <button class="btn fn" onclick="appendChar('(')">(</button>
+                <button class="btn fn" onclick="appendChar(')')">)</button>
+
+                <button class="btn fn" onclick="calculate('log')">log</button>
+                <button class="btn num" onclick="appendChar('7')">7</button>
+                <button class="btn num" onclick="appendChar('8')">8</button>
+                <button class="btn num" onclick="appendChar('9')">9</button>
+                <button class="btn op" onclick="appendChar('/')">÷</button>
+
+                <button class="btn fn" onclick="calculate('ln')">ln</button>
+                <button class="btn num" onclick="appendChar('4')">4</button>
+                <button class="btn num" onclick="appendChar('5')">5</button>
+                <button class="btn num" onclick="appendChar('6')">6</button>
+                <button class="btn op" onclick="appendChar('*')">×</button>
+
+                <button class="btn fn" onclick="appendChar('Math.PI')">π</button>
+                <button class="btn num" onclick="appendChar('1')">1</button>
+                <button class="btn num" onclick="appendChar('2')">2</button>
+                <button class="btn num" onclick="appendChar('3')">3</button>
+                <button class="btn op" onclick="appendChar('-')">−</button>
+
+                <button class="btn fn" onclick="appendChar('Math.E')">e</button>
+                <button class="btn num" onclick="appendChar('0')">0</button>
+                <button class="btn num" onclick="appendChar('.')">.</button>
+                <button class="btn op equals" onclick="evaluateExpr()">=</button>
+                <button class="btn op" onclick="appendChar('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
