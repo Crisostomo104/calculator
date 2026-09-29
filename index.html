@@ -94,9 +94,21 @@
         }
 
         .card-icon {
-            font-size: 4rem;
+            width: 4.5rem;
+            height: 4.5rem;
             margin-bottom: 1.5rem;
             display: block;
+            fill: none;
+            stroke: #60a5fa;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: stroke 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover .card-icon {
+            stroke: #93c5fd;
+            transform: scale(1.08);
         }
 
         .card h2 {
@@ -119,43 +131,78 @@
         <p>Select a calculator to get started</p>
         <div class="cards">
             <a href="subnetting/" class="card">
-                <span class="card-icon">🌐</span>
+                <!-- Globe -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18" />
+                    <path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" />
+                </svg>
                 <h2>Subnet Calculator</h2>
                 <p>Advanced IP & Network Subnetting</p>
             </a>
 
             <a href="scientific/" class="card">
-                <span class="card-icon">🧮</span>
+                <!-- Calculator -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="2.5" width="14" height="19" rx="2" />
+                    <rect x="8" y="5.5" width="8" height="3.5" rx="0.5" />
+                    <path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 16h.01M12 16h.01M15.5 16h.01M8.5 19h.01M12 19h.01M15.5 19h.01" stroke-width="2" />
+                </svg>
                 <h2>Scientific Calculator</h2>
                 <p>Advanced Mathematical Functions</p>
             </a>
 
             <a href="bmi/" class="card">
-                <span class="card-icon">⚖️</span>
+                <!-- Scale / gauge -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="3" />
+                    <path d="M7.5 10a4.5 4.5 0 0 1 9 0z" />
+                    <path d="M12 10l1.5-2.5" />
+                    <path d="M8 16h8" />
+                </svg>
                 <h2>BMI Calculator</h2>
                 <p>Body Mass Index Assessment</p>
             </a>
-            
+
             <a href="loan/" class="card">
-                <span class="card-icon">💰</span>
+                <!-- Coin with dollar sign -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M14.8 9.2c-.4-1-1.4-1.6-2.8-1.6-1.6 0-2.8.8-2.8 2s1 1.7 2.8 2.1c1.8.4 2.8.9 2.8 2.1s-1.2 2-2.8 2c-1.4 0-2.5-.6-2.9-1.7" />
+                    <path d="M12 6v1.6M12 16.4V18" />
+                </svg>
                 <h2>Loan Calculator</h2>
                 <p>Mortgage & Auto Payments</p>
             </a>
-            
+
             <a href="converter/" class="card">
-                <span class="card-icon">📏</span>
+                <!-- Ruler -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2.5" y="8" width="19" height="8" rx="1.5" />
+                    <path d="M6.5 8v3M10 8v4M13.5 8v3M17 8v4" />
+                </svg>
                 <h2>Unit Converter</h2>
                 <p>Length & Weight Conversions</p>
             </a>
-            
+
             <a href="tip/" class="card">
-                <span class="card-icon">💵</span>
+                <!-- Banknote -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2.5" y="6" width="19" height="12" rx="2" />
+                    <circle cx="12" cy="12" r="2.5" />
+                    <path d="M6 12h.01M18 12h.01" stroke-width="2" />
+                </svg>
                 <h2>Tip Calculator</h2>
                 <p>Split Bills & Gratuity</p>
             </a>
-            
+
             <a href="date/" class="card">
-                <span class="card-icon">📅</span>
+                <!-- Calendar -->
+                <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="5" width="17" height="15.5" rx="2" />
+                    <path d="M3.5 10h17M8 3v4M16 3v4" />
+                    <path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" stroke-width="2" />
+                </svg>
                 <h2>Date Calculator</h2>
                 <p>Calculate Time Between Dates</p>
             </a>
